@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% from "bootstrap5/form.html" import render_form %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcript Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <style>
+        .content{
+        margin-top: 100px;
+        width: 500px;}
+    </style>
+</head>
+<body>
+    <div class="container" style="border-top:100px;">
+
+    <div class="content">
+    <h1>Convert your Transcript</h1>
+<h3>Note*** Your document should be in .docx format</h3>
+{{render_form(form)}}
+    </div>
+    </div>
+
+</body>
+</html>
